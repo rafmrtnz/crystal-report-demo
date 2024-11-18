@@ -59,10 +59,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CompanyX.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -73,7 +73,7 @@
       <DependentUpon>Report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -89,7 +89,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Data\Backup\CompanyX.bak" />
+    <None Include="Data\Content\CompanyX.bak" />
     <None Include="Data\CompanyX.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>CompanyX.designer.cs</LastGenOutput>
@@ -115,8 +115,9 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="resources\img\" />
+    <Content Include="resources\img\content.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
